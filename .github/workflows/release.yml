@@ -7,6 +7,8 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
 
     steps:
       - name: Checkout code
@@ -24,6 +26,6 @@ jobs:
       - name: Upload JAR to Release
         uses: softprops/action-gh-release@v1
         with:
-          files: target/*-shaded.jar
+          files: target/SKUScraper*.jar
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
