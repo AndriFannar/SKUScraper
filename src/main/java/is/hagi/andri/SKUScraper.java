@@ -129,8 +129,14 @@ public class SKUScraper
 
         Map<String, String> filterLinks = new LinkedHashMap<>();
         try (Scanner scanner = new Scanner(new File(filePath))) {
+            boolean isFirstLine = true;
             while (scanner.hasNextLine()) {
-                String[] parts = scanner.nextLine().split(",", 3);
+                String line = scanner.nextLine();
+                if (isFirstLine) {
+                    isFirstLine = false;
+                    continue;
+                }
+                String[] parts = line.split(",", 3);
                 if (parts.length >= 3) {
                     String key = parts[0].trim() + "|" + parts[1].trim();
                     filterLinks.put(key, parts[2].trim() + "&page=30");
