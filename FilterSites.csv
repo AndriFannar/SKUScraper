@@ -1,4 +1,149 @@
 Group,Filter,URL
+Gender,Men,https://www.snickersworkwear.com/products/all-products?f%5B0%5D.AttrId=416&f%5B0%5D.ValueId=8895
+Gender,Women,https://www.snickersworkwear.com/products/all-products?f%5B0%5D.AttrId=416&f%5B0%5D.ValueId=8896
+Gender,Junior,https://www.snickersworkwear.com/products/all-products?f%5B0%5D.AttrId=416&f%5B0%5D.ValueId=10462
 Garment Type,One Piece & Bib & Brace Trousers,https://www.snickersworkwear.com/products/all-products?f%5B0%5D.AttrId=611&f%5B0%5D.ValueId=13232
+Garment Type,Pirate Trousers,https://www.snickersworkwear.com/products/all-products?f%5B0%5D.AttrId=611&f%5B0%5D.ValueId=13233
+Garment Type,Shorts,https://www.snickersworkwear.com/products/all-products?f%5B0%5D.AttrId=611&f%5B0%5D.ValueId=13234
+Garment Type,T-Shirts & Long Sleeve T-Shirts,https://www.snickersworkwear.com/products/all-products?f%5B0%5D.AttrId=611&f%5B0%5D.ValueId=13235
+Garment Type,Polo Shirts,https://www.snickersworkwear.com/products/all-products?f%5B0%5D.AttrId=611&f%5B0%5D.ValueId=13237
+Garment Type,Shirts,https://www.snickersworkwear.com/products/all-products?f%5B0%5D.AttrId=611&f%5B0%5D.ValueId=13238
+Garment Type,Jackets,https://www.snickersworkwear.com/products/all-products?f%5B0%5D.AttrId=611&f%5B0%5D.ValueId=13241
+Garment Type,Vests,https://www.snickersworkwear.com/products/all-products?f%5B0%5D.AttrId=611&f%5B0%5D.ValueId=13242
+Garment Type,Trousers,https://www.snickersworkwear.com/products/all-products?f%5B0%5D.AttrId=611&f%5B0%5D.ValueId=394246
+Garment Type,Shell Trousers,https://www.snickersworkwear.com/products/all-products?f%5B0%5D.AttrId=611&f%5B0%5D.ValueId=394247
+Garment Type,Sweatshirts & Hoodies,https://www.snickersworkwear.com/products/all-products?f%5B0%5D.AttrId=611&f%5B0%5D.ValueId=394248
+Garment Type,Fleece,https://www.snickersworkwear.com/products/all-products?f%5B0%5D.AttrId=611&f%5B0%5D.ValueId=394249
+Garment Type,Softshell,https://www.snickersworkwear.com/products/all-products?f%5B0%5D.AttrId=611&f%5B0%5D.ValueId=394250
+Garment Type,Baselayer,https://www.snickersworkwear.com/products/all-products?f%5B0%5D.AttrId=611&f%5B0%5D.ValueId=394251
+Garment Type,Underwear,https://www.snickersworkwear.com/products/all-products?f%5B0%5D.AttrId=611&f%5B0%5D.ValueId=394252
+Garment Type,Gloves,https://www.snickersworkwear.com/products/all-products?f%5B0%5D.AttrId=611&f%5B0%5D.ValueId=394253
+Garment Type,Kneepads,https://www.snickersworkwear.com/products/all-products?f%5B0%5D.AttrId=611&f%5B0%5D.ValueId=394254
+Garment Type,Tool Carriers,https://www.snickersworkwear.com/products/all-products?f%5B0%5D.AttrId=611&f%5B0%5D.ValueId=394255
+Garment Type,Belts & Braces,https://www.snickersworkwear.com/products/all-products?f%5B0%5D.AttrId=611&f%5B0%5D.ValueId=394256
+Garment Type,Bags,https://www.snickersworkwear.com/products/all-products?f%5B0%5D.AttrId=611&f%5B0%5D.ValueId=394257
+Garment Type,Caps & Headwear,https://www.snickersworkwear.com/products/all-products?f%5B0%5D.AttrId=611&f%5B0%5D.ValueId=394258
+Garment Type,Socks,https://www.snickersworkwear.com/products/all-products?f%5B0%5D.AttrId=611&f%5B0%5D.ValueId=394259
+Garment Type,Other Accessories,https://www.snickersworkwear.com/products/all-products?f%5B0%5D.AttrId=611&f%5B0%5D.ValueId=394260
+Garment Type,Overalls,https://www.snickersworkwear.com/products/all-products?f%5B0%5D.AttrId=611&f%5B0%5D.ValueId=395218
+Garment Type,Toolbelts,https://www.snickersworkwear.com/products/all-products?f%5B0%5D.AttrId=611&f%5B0%5D.ValueId=572528
+Segment,Workwear,https://www.snickersworkwear.com/products/all-products?f%5B0%5D.AttrId=744&f%5B0%5D.ValueId=394243
+Segment,Protective Wear,https://www.snickersworkwear.com/products/all-products?f%5B0%5D.AttrId=744&f%5B0%5D.ValueId=394244
+Segment,Service Wear,https://www.snickersworkwear.com/products/all-products?f%5B0%5D.AttrId=744&f%5B0%5D.ValueId=394245
+Material,Softshell,https://www.snickersworkwear.com/products/all-products?f%5B0%5D.AttrId=419&f%5B0%5D.ValueId=8908
+Material,Polyethylene (PE),https://www.snickersworkwear.com/products/all-products?f%5B0%5D.AttrId=419&f%5B0%5D.ValueId=9001
+Material,Wool,https://www.snickersworkwear.com/products/all-products?f%5B0%5D.AttrId=419&f%5B0%5D.ValueId=9532
+Material,Modacrylic,https://www.snickersworkwear.com/products/all-products?f%5B0%5D.AttrId=419&f%5B0%5D.ValueId=323000
+Material,Polyester,https://www.snickersworkwear.com/products/all-products?f%5B0%5D.AttrId=419&f%5B0%5D.ValueId=371740
+Material,Protal®,https://www.snickersworkwear.com/products/all-products?f%5B0%5D.AttrId=419&f%5B0%5D.ValueId=618892
+Material,½ Twill Rip-Stop,https://www.snickersworkwear.com/products/all-products?f%5B0%5D.AttrId=419&f%5B0%5D.ValueId=618903
+Material,Para-Aramid,https://www.snickersworkwear.com/products/all-products?f%5B0%5D.AttrId=419&f%5B0%5D.ValueId=618904
+Material,Canvas+,https://www.snickersworkwear.com/products/all-products?f%5B0%5D.AttrId=419&f%5B0%5D.ValueId=8899
+Material,CoolTwill,https://www.snickersworkwear.com/products/all-products?f%5B0%5D.AttrId=419&f%5B0%5D.ValueId=8900
+Material,CORDURA®,https://www.snickersworkwear.com/products/all-products?f%5B0%5D.AttrId=419&f%5B0%5D.ValueId=10441
+Material,D3O™,https://www.snickersworkwear.com/products/all-products?f%5B0%5D.AttrId=419&f%5B0%5D.ValueId=10448
+Material,Dobby Pro,https://www.snickersworkwear.com/products/all-products?f%5B0%5D.AttrId=419&f%5B0%5D.ValueId=9684
+Material,PU,https://www.snickersworkwear.com/products/all-products?f%5B0%5D.AttrId=419&f%5B0%5D.ValueId=8909
+Material,Fleece,https://www.snickersworkwear.com/products/all-products?f%5B0%5D.AttrId=419&f%5B0%5D.ValueId=8912
+Material,Elastane,https://www.snickersworkwear.com/products/all-products?f%5B0%5D.AttrId=419&f%5B0%5D.ValueId=8914
+Material,Cotton,https://www.snickersworkwear.com/products/all-products?f%5B0%5D.AttrId=419&f%5B0%5D.ValueId=8924
+Material,TPU,https://www.snickersworkwear.com/products/all-products?f%5B0%5D.AttrId=419&f%5B0%5D.ValueId=9002
+Material,Wool-Blend,https://www.snickersworkwear.com/products/all-products?f%5B0%5D.AttrId=419&f%5B0%5D.ValueId=10437
+Material,Rip-Stop,https://www.snickersworkwear.com/products/all-products?f%5B0%5D.AttrId=419&f%5B0%5D.ValueId=8901
+Material,Kevlar™,https://www.snickersworkwear.com/products/all-products?f%5B0%5D.AttrId=419&f%5B0%5D.ValueId=10440
+Material,37.5®,https://www.snickersworkwear.com/products/all-products?f%5B0%5D.AttrId=419&f%5B0%5D.ValueId=10463
+Material,HPPE,https://www.snickersworkwear.com/products/all-products?f%5B0%5D.AttrId=419&f%5B0%5D.ValueId=10464
+Material,Latex,https://www.snickersworkwear.com/products/all-products?f%5B0%5D.AttrId=419&f%5B0%5D.ValueId=10465
+Material,Nitrile,https://www.snickersworkwear.com/products/all-products?f%5B0%5D.AttrId=419&f%5B0%5D.ValueId=10466
+Material,Poron®,https://www.snickersworkwear.com/products/all-products?f%5B0%5D.AttrId=419&f%5B0%5D.ValueId=10467
+Material,PVC,https://www.snickersworkwear.com/products/all-products?f%5B0%5D.AttrId=419&f%5B0%5D.ValueId=10468
+Occupation,General Construction,https://www.snickersworkwear.com/products/all-products?f%5B0%5D.AttrId=742&f%5B0%5D.ValueId=394225
+Occupation,Road Worker,https://www.snickersworkwear.com/products/all-products?f%5B0%5D.AttrId=742&f%5B0%5D.ValueId=618867
+Occupation,Carpenter,https://www.snickersworkwear.com/products/all-products?f%5B0%5D.AttrId=742&f%5B0%5D.ValueId=394226
+Occupation,Bricklayer,https://www.snickersworkwear.com/products/all-products?f%5B0%5D.AttrId=742&f%5B0%5D.ValueId=394227
+Occupation,Roofer,https://www.snickersworkwear.com/products/all-products?f%5B0%5D.AttrId=742&f%5B0%5D.ValueId=394228
+Occupation,Electrician,https://www.snickersworkwear.com/products/all-products?f%5B0%5D.AttrId=742&f%5B0%5D.ValueId=394229
+Occupation,Floorlayer,https://www.snickersworkwear.com/products/all-products?f%5B0%5D.AttrId=742&f%5B0%5D.ValueId=394230
+Occupation,Plumber,https://www.snickersworkwear.com/products/all-products?f%5B0%5D.AttrId=742&f%5B0%5D.ValueId=394231
+Occupation,Painter,https://www.snickersworkwear.com/products/all-products?f%5B0%5D.AttrId=742&f%5B0%5D.ValueId=394232
+Occupation,Gardener,https://www.snickersworkwear.com/products/all-products?f%5B0%5D.AttrId=742&f%5B0%5D.ValueId=394233
+Occupation,Roadworker & Railway Worker,https://www.snickersworkwear.com/products/all-products?f%5B0%5D.AttrId=742&f%5B0%5D.ValueId=394234
+Occupation,Facility Management,https://www.snickersworkwear.com/products/all-products?f%5B0%5D.AttrId=742&f%5B0%5D.ValueId=394235
+Occupation,Transportation & Logistics,https://www.snickersworkwear.com/products/all-products?f%5B0%5D.AttrId=742&f%5B0%5D.ValueId=394236
+Occupation,Metal Construction,https://www.snickersworkwear.com/products/all-products?f%5B0%5D.AttrId=742&f%5B0%5D.ValueId=569327
+Occupation,Welding,https://www.snickersworkwear.com/products/all-products?f%5B0%5D.AttrId=742&f%5B0%5D.ValueId=569326
+Occupation,Mining,https://www.snickersworkwear.com/products/all-products?f%5B0%5D.AttrId=742&f%5B0%5D.ValueId=569328
+Occupation,Automotive,https://www.snickersworkwear.com/products/all-products?f%5B0%5D.AttrId=742&f%5B0%5D.ValueId=395416
+Occupation,Repair and Installation of Machinery and Equipment,https://www.snickersworkwear.com/products/all-products?f%5B0%5D.AttrId=742&f%5B0%5D.ValueId=569325
+Occupation,"Power Supply, Gas & Fuel",https://www.snickersworkwear.com/products/all-products?f%5B0%5D.AttrId=742&f%5B0%5D.ValueId=395417
+Season,Autumn/Winter,https://www.snickersworkwear.com/products/all-products?f%5B0%5D.AttrId=241&f%5B0%5D.ValueId=8368
+Season,Spring/Summer,https://www.snickersworkwear.com/products/all-products?f%5B0%5D.AttrId=241&f%5B0%5D.ValueId=8369
+Season,All Year,https://www.snickersworkwear.com/products/all-products?f%5B0%5D.AttrId=241&f%5B0%5D.ValueId=8370
+Collection,AllroundWork,https://www.snickersworkwear.com/products/all-products?f%5B0%5D.AttrId=503&f%5B0%5D.ValueId=12000
+Collection,FlexiWork,https://www.snickersworkwear.com/products/all-products?f%5B0%5D.AttrId=503&f%5B0%5D.ValueId=11997
+Collection,LiteWork,https://www.snickersworkwear.com/products/all-products?f%5B0%5D.AttrId=503&f%5B0%5D.ValueId=11998
+Collection,High-Vis,https://www.snickersworkwear.com/products/all-products?f%5B0%5D.AttrId=503&f%5B0%5D.ValueId=619522
+Collection,ProtecWork,https://www.snickersworkwear.com/products/all-products?f%5B0%5D.AttrId=503&f%5B0%5D.ValueId=12370
+CE Certification,Confidence in textiles (OEKO-TEX®),https://www.snickersworkwear.com/products/all-products?f%5B0%5D.AttrId=453&f%5B0%5D.ValueId=573506
+CE Certification,EN 61482-2:2020 - Protective clothing against the thermal hazards of an electric arc ,https://www.snickersworkwear.com/products/all-products?f%5B0%5D.AttrId=453&f%5B0%5D.ValueId=656020
+CE Certification,RIS-3279-TOM,https://www.snickersworkwear.com/products/all-products?f%5B0%5D.AttrId=453&f%5B0%5D.ValueId=679460
+CE Certification,Personal Protective Equipment (PPE) directive (89/686 EEC). Individual classification are found in each garment.,https://www.snickersworkwear.com/products/all-products?f%5B0%5D.AttrId=453&f%5B0%5D.ValueId=571868
+CE Certification,EN 20471 - High visibility clothing,https://www.snickersworkwear.com/products/all-products?f%5B0%5D.AttrId=453&f%5B0%5D.ValueId=10451
+CE Certification,EN 11612 - Protective clothing against heat and flame,https://www.snickersworkwear.com/products/all-products?f%5B0%5D.AttrId=453&f%5B0%5D.ValueId=10454
+CE Certification,EN 14116 - Protective clothing against flame,https://www.snickersworkwear.com/products/all-products?f%5B0%5D.AttrId=453&f%5B0%5D.ValueId=319848
+CE Certification,IEC 61482-2:2018 - Protective clothing against the thermal hazards of an electric arc ,https://www.snickersworkwear.com/products/all-products?f%5B0%5D.AttrId=453&f%5B0%5D.ValueId=592074
+CE Certification,IEC 61482-2:2009 - Protective clothing against the thermal hazards of an electric arc,https://www.snickersworkwear.com/products/all-products?f%5B0%5D.AttrId=453&f%5B0%5D.ValueId=319543
+CE Certification,EN 13034 - Protective clothing against liquid chemicals,https://www.snickersworkwear.com/products/all-products?f%5B0%5D.AttrId=453&f%5B0%5D.ValueId=319542
+CE Certification,EN ISO 11611 - Protective clothing for use in welding and allied processes,https://www.snickersworkwear.com/products/all-products?f%5B0%5D.AttrId=453&f%5B0%5D.ValueId=10453
+CE Certification,EN 342 - Protective clothing against cold,https://www.snickersworkwear.com/products/all-products?f%5B0%5D.AttrId=453&f%5B0%5D.ValueId=10456
+CE Certification,EN 14404 - Knee protection,https://www.snickersworkwear.com/products/all-products?f%5B0%5D.AttrId=453&f%5B0%5D.ValueId=10455
+CE Certification,EN 388 - Protective gloves against mechanical risks,https://www.snickersworkwear.com/products/all-products?f%5B0%5D.AttrId=453&f%5B0%5D.ValueId=10458
+CE Certification,EN 1149-5  - Protective clothing electrostatic properties,https://www.snickersworkwear.com/products/all-products?f%5B0%5D.AttrId=453&f%5B0%5D.ValueId=10452
+CE Certification,EN 343 - Protective clothing against rain,https://www.snickersworkwear.com/products/all-products?f%5B0%5D.AttrId=453&f%5B0%5D.ValueId=10457
+CE Certification,EN 511 - Protective gloves against cold,https://www.snickersworkwear.com/products/all-products?f%5B0%5D.AttrId=453&f%5B0%5D.ValueId=10459
+CE Certification,EN 407 - Protective gloves against heat,https://www.snickersworkwear.com/products/all-products?f%5B0%5D.AttrId=453&f%5B0%5D.ValueId=10460
+CE Certification,EN ISO 15797 - Industrial washing and finishing procedures for testing of workwear,https://www.snickersworkwear.com/products/all-products?f%5B0%5D.AttrId=453&f%5B0%5D.ValueId=324687
+Colour,Black,https://www.snickersworkwear.com/products/all-products?f%5B0%5D.AttrId=739&f%5B0%5D.ValueId=393461
 Colour,Khaki Green,https://www.snickersworkwear.com/products/all-products?f%5B0%5D.AttrId=739&f%5B0%5D.ValueId=656150
+Colour,Blue,https://www.snickersworkwear.com/products/all-products?f%5B0%5D.AttrId=739&f%5B0%5D.ValueId=393462
+Colour,Brown,https://www.snickersworkwear.com/products/all-products?f%5B0%5D.AttrId=739&f%5B0%5D.ValueId=393463
+Colour,Green,https://www.snickersworkwear.com/products/all-products?f%5B0%5D.AttrId=739&f%5B0%5D.ValueId=393464
+Colour,Grey,https://www.snickersworkwear.com/products/all-products?f%5B0%5D.AttrId=739&f%5B0%5D.ValueId=393465
+Colour,High Visibility Orange,https://www.snickersworkwear.com/products/all-products?f%5B0%5D.AttrId=739&f%5B0%5D.ValueId=393467
+Colour,High Visibility Yellow,https://www.snickersworkwear.com/products/all-products?f%5B0%5D.AttrId=739&f%5B0%5D.ValueId=393466
+Colour,Khaki,https://www.snickersworkwear.com/products/all-products?f%5B0%5D.AttrId=739&f%5B0%5D.ValueId=393468
+Colour,Orange,https://www.snickersworkwear.com/products/all-products?f%5B0%5D.AttrId=739&f%5B0%5D.ValueId=393470
+Colour,Red,https://www.snickersworkwear.com/products/all-products?f%5B0%5D.AttrId=739&f%5B0%5D.ValueId=393472
+Colour,White,https://www.snickersworkwear.com/products/all-products?f%5B0%5D.AttrId=739&f%5B0%5D.ValueId=393473
+Colour,Yellow,https://www.snickersworkwear.com/products/all-products?f%5B0%5D.AttrId=739&f%5B0%5D.ValueId=393474
+Feature,Sustainability,https://www.snickersworkwear.com/products/all-products?f%5B0%5D.AttrId=418&f%5B0%5D.ValueId=619424
+Feature,Thumb Grip,https://www.snickersworkwear.com/products/all-products?f%5B0%5D.AttrId=418&f%5B0%5D.ValueId=668544
+Feature,Electric Heat,https://www.snickersworkwear.com/products/all-products?f%5B0%5D.AttrId=418&f%5B0%5D.ValueId=672258
 Feature,Q Heat,https://www.snickersworkwear.com/products/all-products?f%5B0%5D.AttrId=418&f%5B0%5D.ValueId=675157
+Feature,Kneepad Pockets,https://www.snickersworkwear.com/products/all-products?f%5B0%5D.AttrId=418&f%5B0%5D.ValueId=8860
+Feature,Integrated Braces (Removable),https://www.snickersworkwear.com/products/all-products?f%5B0%5D.AttrId=418&f%5B0%5D.ValueId=618893
+Feature,Protection FR,https://www.snickersworkwear.com/products/all-products?f%5B0%5D.AttrId=418&f%5B0%5D.ValueId=619364
+Feature,Holster Pockets,https://www.snickersworkwear.com/products/all-products?f%5B0%5D.AttrId=418&f%5B0%5D.ValueId=8861
+Feature,Stretch,https://www.snickersworkwear.com/products/all-products?f%5B0%5D.AttrId=418&f%5B0%5D.ValueId=8875
+Feature,Cut Protection,https://www.snickersworkwear.com/products/all-products?f%5B0%5D.AttrId=418&f%5B0%5D.ValueId=10461
+Feature,ID-Card Holder,https://www.snickersworkwear.com/products/all-products?f%5B0%5D.AttrId=418&f%5B0%5D.ValueId=13263
+Feature,Zipped Pocket,https://www.snickersworkwear.com/products/all-products?f%5B0%5D.AttrId=418&f%5B0%5D.ValueId=394238
+Feature,UV Protection,https://www.snickersworkwear.com/products/all-products?f%5B0%5D.AttrId=418&f%5B0%5D.ValueId=617059
+Feature,Bottom Leg Adjustment,https://www.snickersworkwear.com/products/all-products?f%5B0%5D.AttrId=418&f%5B0%5D.ValueId=394239
+Feature,Cover Trouser,https://www.snickersworkwear.com/products/all-products?f%5B0%5D.AttrId=418&f%5B0%5D.ValueId=394240
+Feature,Integrated Belt,https://www.snickersworkwear.com/products/all-products?f%5B0%5D.AttrId=418&f%5B0%5D.ValueId=394241
+Feature,Reflective,https://www.snickersworkwear.com/products/all-products?f%5B0%5D.AttrId=418&f%5B0%5D.ValueId=394242
+Feature,Knuckle Protection,https://www.snickersworkwear.com/products/all-products?f%5B0%5D.AttrId=418&f%5B0%5D.ValueId=395422
+Feature,Impact Protection,https://www.snickersworkwear.com/products/all-products?f%5B0%5D.AttrId=418&f%5B0%5D.ValueId=395423
+Feature,Screen Compatibility,https://www.snickersworkwear.com/products/all-products?f%5B0%5D.AttrId=418&f%5B0%5D.ValueId=395425
+Feature,Seamless,https://www.snickersworkwear.com/products/all-products?f%5B0%5D.AttrId=418&f%5B0%5D.ValueId=395426
+Feature,Ventilating,https://www.snickersworkwear.com/products/all-products?f%5B0%5D.AttrId=418&f%5B0%5D.ValueId=395427
+Feature,Insulating,https://www.snickersworkwear.com/products/all-products?f%5B0%5D.AttrId=418&f%5B0%5D.ValueId=569494
+Feature,Hood,https://www.snickersworkwear.com/products/all-products?f%5B0%5D.AttrId=418&f%5B0%5D.ValueId=569495
+Feature,Bottom Hem Adjustment,https://www.snickersworkwear.com/products/all-products?f%5B0%5D.AttrId=418&f%5B0%5D.ValueId=569496
+Feature,Inner Cuff with Thumb Grip,https://www.snickersworkwear.com/products/all-products?f%5B0%5D.AttrId=418&f%5B0%5D.ValueId=569497
+Feature,Water Protection,https://www.snickersworkwear.com/products/all-products?f%5B0%5D.AttrId=418&f%5B0%5D.ValueId=8851
+Feature,Wind Protection,https://www.snickersworkwear.com/products/all-products?f%5B0%5D.AttrId=418&f%5B0%5D.ValueId=8852
+Fit,Regular,https://www.snickersworkwear.com/products/all-products?f%5B0%5D.AttrId=529&f%5B0%5D.ValueId=12344
+Fit,Slim,https://www.snickersworkwear.com/products/all-products?f%5B0%5D.AttrId=529&f%5B0%5D.ValueId=12345
+Fit,Loose,https://www.snickersworkwear.com/products/all-products?f%5B0%5D.AttrId=529&f%5B0%5D.ValueId=323256

@@ -37,7 +37,7 @@ public class SKUScraper
      */
     public static void main(String[] args)
     {
-        System.out.println("[INFO] Starting Snickers Workwear Filter Scraper...");
+        System.out.println("[INFO] Starting SKUScraper Version 1.0...");
 
         try
         {
@@ -49,11 +49,15 @@ public class SKUScraper
                 String url = entry.getValue();
                 System.out.println("[INFO] Scraping " + filterKey + " -> " + url);
                 List<String> skus = getSKUs(url);
+                if (skus.isEmpty()) {
+                    System.out.println("[WARN] No SKUs found for " + filterKey);
+                }
                 scrapedResults.put(Arrays.asList(filterKey.split("\\|", 2)), String.join(", ", skus));
             }
 
+
             updateCSV(PATH_TO_MASTER_CSV, scrapedResults);
-            System.out.println("[INFO] CSV update complete.");
+            System.out.println("[INFO] Processed " + scrapedResults.size() + " filters. CSV updated.");
         }
         catch (Exception e)
         {
@@ -163,19 +167,28 @@ public class SKUScraper
             System.out.println("[ERROR] Failed to back up CSV. Aborting... Error: " + e);
             return;
         }
-
-        String today = LocalDate.now().format(DateTimeFormatter.ofPattern("MMM ''yy"));
-        String newHeader = "SKUs (" + today + ")";
         List<String[]> updatedRows = new ArrayList<>();
 
         try (BufferedReader reader = new BufferedReader(new FileReader(csvPath))) {
             String header = reader.readLine();
             if (header == null) throw new IOException("CSV file is empty");
 
+            int skuColumnIndex = -1;
             String[] headerParts = header.split(",(?=(?:[^\"]*\"[^\"]*\")*[^\"]*$)", -1);
-            int newColumnIndex = headerParts.length;
-            header += "," + newHeader;
-            updatedRows.add(header.split(",(?=(?:[^\"]*\"[^\"]*\")*[^\"]*$)", -1));
+
+            for (int i = headerParts.length - 1; i >= 0; i--) {
+                if (headerParts[i].trim().startsWith("SKUs")) {
+                    skuColumnIndex = i;
+                    break;
+                }
+            }
+            if (skuColumnIndex == -1) {
+                System.out.println("[ERROR] No existing SKU column found. Aborting.");
+                return;
+            }
+
+            System.out.println("[INFO] Found SKU column at index " + skuColumnIndex);
+            updatedRows.add(headerParts);
 
             String line;
             while ((line = reader.readLine()) != null) {
@@ -184,7 +197,7 @@ public class SKUScraper
                 String filter = parts[1].trim();
 
                 Set<String> skuSet = new LinkedHashSet<>();
-                String oldCell = parts.length > newColumnIndex ? parts[newColumnIndex].trim().replaceAll("^\"|\"$", "") : "";
+                String oldCell = parts.length > skuColumnIndex ? parts[skuColumnIndex].trim().replaceAll("^\"|\"$", "") : "";
                 if (!oldCell.isEmpty()) {
                     skuSet.addAll(Arrays.asList(oldCell.split(",\\s*")));
                 }
@@ -197,8 +210,7 @@ public class SKUScraper
                 List<String> sortedSkus = new ArrayList<>(skuSet);
                 Collections.sort(sortedSkus);
                 String mergedCell = String.join(", ", sortedSkus);
-                parts = Arrays.copyOf(parts, newColumnIndex + 1);
-                parts[newColumnIndex] = "\"" + mergedCell + "\"";
+                parts[skuColumnIndex] = "\"" + mergedCell + "\"";
                 updatedRows.add(parts);
             }
 
