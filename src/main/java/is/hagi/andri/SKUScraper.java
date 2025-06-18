@@ -1,20 +1,21 @@
 package is.hagi.andri;
 
-import org.jsoup.Jsoup;
+import com.opencsv.CSVReader;
+import com.opencsv.CSVWriter;
+
+import org.jsoup.select.Elements;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
-import org.jsoup.select.Elements;
+import org.jsoup.Jsoup;
 
-import java.io.*;
-import java.net.URL;
-import java.net.URI;
+import java.nio.file.StandardCopyOption;
 import java.net.URLConnection;
 import java.nio.file.Files;
 import java.nio.file.Path;
-import java.nio.file.StandardCopyOption;
-import java.time.LocalDate;
-import java.time.format.DateTimeFormatter;
+import java.net.URL;
+import java.net.URI;
 import java.util.*;
+import java.io.*;
 
 /**
  * SKUScraper class for scraping SKUs from the Snickers Workwear website.
@@ -22,7 +23,7 @@ import java.util.*;
  *
  * @author Andri Fannar Kristjánsson, Andri@Hilti.is
  * @since 22/05/2025
- * @version 1.0
+ * @version 1.1
  */
 public class SKUScraper
 {
@@ -44,10 +45,13 @@ public class SKUScraper
             Map<String, String> filterLinks = readFilterLinks(PATH_TO_FILTER_LINKS);
             Map<List<String>, String> scrapedResults = new LinkedHashMap<>();
 
+            int counter = 1;
             for (Map.Entry<String, String> entry : filterLinks.entrySet()) {
                 String filterKey = entry.getKey();
                 String url = entry.getValue();
-                System.out.println("[INFO] Scraping " + filterKey + " -> " + url);
+
+                System.out.println("[INFO] (" + counter++ + "/" + filterLinks.size() + ") Scraping " + entry.getKey() + "...");
+
                 List<String> skus = getSKUs(url);
                 if (skus.isEmpty()) {
                     System.out.println("[WARN] No SKUs found for " + filterKey);
@@ -88,6 +92,9 @@ public class SKUScraper
             if(text.matches("\\d{4}"))  {
                 System.out.println("[INFO] Found new SKU: " + text);
                 skus.add(text);
+            }
+            else {
+                System.out.println("[WARN] SKU \"" + text + "\" does not match format. Skipping...");
             }
         }
 
@@ -132,15 +139,19 @@ public class SKUScraper
         System.out.println("[INFO] Reading filter links...");
 
         Map<String, String> filterLinks = new LinkedHashMap<>();
-        try (Scanner scanner = new Scanner(new File(filePath))) {
+        try (CSVReader reader = new CSVReader(new FileReader(filePath))) {
+            String[] parts;
             boolean isFirstLine = true;
-            while (scanner.hasNextLine()) {
-                String line = scanner.nextLine();
+            while ((parts = reader.readNext()) != null) {
                 if (isFirstLine) {
+                    if (!"Group".equalsIgnoreCase(parts[0].trim()) || !"Filter".equalsIgnoreCase(parts[1].trim())) {
+                        System.out.println("[ERROR] Unexpected header format in FilterSites.csv. Expected 'Group' and 'Filter' as first columns.");
+                        return filterLinks;
+                    }
+
                     isFirstLine = false;
                     continue;
                 }
-                String[] parts = line.split(",", 3);
                 if (parts.length >= 3) {
                     String key = parts[0].trim() + "|" + parts[1].trim();
                     filterLinks.put(key, parts[2].trim() + "&page=30");
@@ -168,14 +179,19 @@ public class SKUScraper
             return;
         }
         List<String[]> updatedRows = new ArrayList<>();
+        int rowsUpdated = 0;
 
-        try (BufferedReader reader = new BufferedReader(new FileReader(csvPath))) {
-            String header = reader.readLine();
-            if (header == null) throw new IOException("CSV file is empty");
+        try (CSVReader reader = new CSVReader(new FileReader(csvPath))) {
+            List<String[]> allRows = reader.readAll();
+            if (allRows.isEmpty()) throw new IOException("CSV file is empty");
+
+            String[] headerParts = allRows.get(0);
+            if (!"Group".equalsIgnoreCase(headerParts[0].trim()) || !"Filter".equalsIgnoreCase(headerParts[1].trim())) {
+                System.out.println("[ERROR] Unexpected header format in Filters.csv. Expected 'Group' and 'Filter' as first columns.");
+                return;
+            }
 
             int skuColumnIndex = -1;
-            String[] headerParts = header.split(",(?=(?:[^\"]*\"[^\"]*\")*[^\"]*$)", -1);
-
             for (int i = headerParts.length - 1; i >= 0; i--) {
                 if (headerParts[i].trim().startsWith("SKUs")) {
                     skuColumnIndex = i;
@@ -190,14 +206,13 @@ public class SKUScraper
             System.out.println("[INFO] Found SKU column at index " + skuColumnIndex);
             updatedRows.add(headerParts);
 
-            String line;
-            while ((line = reader.readLine()) != null) {
-                String[] parts = line.split(",(?=(?:[^\"]*\"[^\"]*\")*[^\"]*$)", -1);
+            for (int i = 1; i < allRows.size(); i++) {
+                String[] parts = allRows.get(i);
                 String group = parts[0].trim();
                 String filter = parts[1].trim();
 
                 Set<String> skuSet = new LinkedHashSet<>();
-                String oldCell = parts.length > skuColumnIndex ? parts[skuColumnIndex].trim().replaceAll("^\"|\"$", "") : "";
+                String oldCell = parts.length > skuColumnIndex ? parts[skuColumnIndex].trim() : "";
                 int originalSize = 0;
                 if (!oldCell.isEmpty()) {
                     skuSet.addAll(Arrays.asList(oldCell.split(",\\s*")));
@@ -211,23 +226,25 @@ public class SKUScraper
 
                 if (skuSet.size() > originalSize) {
                     System.out.println("[INFO] Added SKUs for row: Group = \"" + group + "\", Filter = \"" + filter + "\"");
+                    rowsUpdated++;
                 }
 
                 List<String> sortedSkus = new ArrayList<>(skuSet);
                 Collections.sort(sortedSkus);
                 String mergedCell = String.join(", ", sortedSkus);
-                parts[skuColumnIndex] = "\"" + mergedCell + "\"";
+                parts = Arrays.copyOf(parts, Math.max(parts.length, skuColumnIndex + 1));
+                parts[skuColumnIndex] = mergedCell;
                 updatedRows.add(parts);
             }
 
-            try (PrintWriter writer = new PrintWriter(new FileWriter(csvPath))) {
+            try (CSVWriter writer = new CSVWriter(new FileWriter(csvPath))) {
                 for (String[] row : updatedRows) {
-                    writer.println(String.join(",", row));
+                    writer.writeNext(row);
                 }
             }
         } catch (Exception e) {
             System.out.println("[ERROR] Failed to update CSV: " + e);
         }
-        System.out.println("[INFO] CSV updated.");
+        System.out.println("[INFO] CSV updated. " + rowsUpdated + " row(s) were changed.");
     }
 }
