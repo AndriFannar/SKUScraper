@@ -198,13 +198,19 @@ public class SKUScraper
 
                 Set<String> skuSet = new LinkedHashSet<>();
                 String oldCell = parts.length > skuColumnIndex ? parts[skuColumnIndex].trim().replaceAll("^\"|\"$", "") : "";
+                int originalSize = 0;
                 if (!oldCell.isEmpty()) {
                     skuSet.addAll(Arrays.asList(oldCell.split(",\\s*")));
+                    originalSize = skuSet.size();
                 }
 
                 String newSkus = newData.getOrDefault(Arrays.asList(group, filter), "");
                 if (!newSkus.isEmpty()) {
                     skuSet.addAll(Arrays.asList(newSkus.split(",\\s*")));
+                }
+
+                if (skuSet.size() > originalSize) {
+                    System.out.println("[INFO] Added SKUs for row: Group = \"" + group + "\", Filter = \"" + filter + "\"");
                 }
 
                 List<String> sortedSkus = new ArrayList<>(skuSet);
