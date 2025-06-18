@@ -38,7 +38,7 @@ public class SKUScraper
      */
     public static void main(String[] args)
     {
-        System.out.println("[INFO] Starting SKUScraper Version 1.0...");
+        System.out.println("[INFO] Starting SKUScraper Version 1.1... \n");
 
         try
         {
@@ -93,13 +93,10 @@ public class SKUScraper
                 System.out.println("[INFO] Found new SKU: " + text);
                 skus.add(text);
             }
-            else {
-                System.out.println("[WARN] SKU \"" + text + "\" does not match format. Skipping...");
-            }
         }
 
-        System.out.println("\n[INFO] Content processed.");
-        System.out.println("[INFO] Total SKUs: " + (skus.size()));
+        System.out.println("[INFO] Content processed.");
+        System.out.println("[INFO] Total SKUs: " + (skus.size()) + "\n");
         return skus;
     }
 
@@ -111,7 +108,7 @@ public class SKUScraper
      */
     private static String fetchSite(String urlString)
     {
-        System.out.println("\n[INFO] Attempting to connect to: " + urlString + "...");
+        System.out.println("[INFO] Attempting to connect to: " + urlString + "...");
 
         try
         {
@@ -136,7 +133,7 @@ public class SKUScraper
      * @return Returns a map of the filters.
      */
     private static Map<String, String> readFilterLinks(String filePath) {
-        System.out.println("[INFO] Reading filter links...");
+        System.out.println("[INFO] Reading filter links... \n");
 
         Map<String, String> filterLinks = new LinkedHashMap<>();
         try (CSVReader reader = new CSVReader(new FileReader(filePath))) {
